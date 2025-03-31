@@ -49,7 +49,7 @@
                         <svg width="17" height="22" viewBox="0 0 17 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M6.71972 20.6105C7.29206 21.1057 7.88894 21.5583 8.5 22C9.11237 21.5641 9.70636 21.1005 10.2803 20.6105C11.237 19.7867 12.1374 18.8936 12.9748 17.9375C14.9052 15.724 17 12.5153 17 8.9133C17 7.74279 16.7801 6.58374 16.353 5.50233C15.9258 4.42092 15.2997 3.43832 14.5104 2.61064C13.7211 1.78297 12.7841 1.12642 11.7528 0.678484C10.7215 0.230549 9.61624 0 8.5 0C7.38376 0 6.27846 0.230549 5.24719 0.678484C4.21592 1.12642 3.27889 1.78297 2.48959 2.61064C1.70029 3.43832 1.07419 4.42092 0.647024 5.50233C0.219859 6.58374 -1.66332e-08 7.74279 0 8.9133C0 12.5153 2.09478 15.7231 4.02522 17.9375C4.86259 18.8939 5.76297 19.7864 6.71972 20.6105ZM8.5 12.132C7.68593 12.132 6.90521 11.7929 6.32958 11.1893C5.75394 10.5856 5.43056 9.76695 5.43056 8.9133C5.43056 8.05965 5.75394 7.24096 6.32958 6.63734C6.90521 6.03372 7.68593 5.69461 8.5 5.69461C9.31407 5.69461 10.0948 6.03372 10.6704 6.63734C11.2461 7.24096 11.5694 8.05965 11.5694 8.9133C11.5694 9.76695 11.2461 10.5856 10.6704 11.1893C10.0948 11.7929 9.31407 12.132 8.5 12.132Z" fill="#ACADDF" />
                         </svg>
-                        <p>Ростов-на-Дону, ул. Красноармейская, д.166/177</p>
+                        <p><button>Ростов-на-Дону,</button> ул. Красноармейская, д.166/177</p>
                     </div>
         
                     <a href="/" class="header__logo logo">
@@ -227,17 +227,20 @@
             </div>
         </div>
     
-        <div class="intro-service__stock">
+        <div class="intro-service__stock change-item">
             <div class="intro-service__stock_wrap">
-                <p class="intro-service__stock_number">10%</p>
-                <p class="intro-service__stock_text"><span>Скидка 10%</span> на первую капельницу</p>
+                <div class="intro-service__stock_number">
+                    <img src="assets/img/icons/star-3-white.svg" alt="">
+                    <p>10%</p>
+                </div>
+                <p class="intro-service__stock_text change-item__title"><span>Скидка 10%</span> на первую капельницу</p>
             </div>
             <img src="assets/img/principles/bg.svg" alt="" class="intro-service__stock_bg">
-            <a href="#" class="intro-service__stock_btn">
+            <button class="intro-service__stock_btn popup-btn change-item__btn" data-path="popup-change">
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 7C0 7.48325 0.391751 7.875 0.875 7.875L10.6488 7.875L6.37875 12.145C6.036 12.4877 6.03698 13.0438 6.38095 13.3853C6.72319 13.7251 7.27583 13.7242 7.61688 13.3831L13.2929 7.70711C13.6834 7.31658 13.6834 6.68342 13.2929 6.29289L7.61715 0.617151C7.27631 0.276308 6.72369 0.276308 6.38285 0.617151C6.04222 0.957778 6.04197 1.50997 6.3823 1.8509L10.6488 6.125L0.875001 6.125C0.391752 6.125 0 6.51675 0 7Z" fill="#ACADDF" />
                 </svg>
-            </a>
+            </button>
         </div>
     
     </section>
@@ -755,7 +758,7 @@
     
             <div class="alcoholism__cards">
                 <div class="alcoholism__card">
-                    <div class="accordion">
+                    <div class="alcoholism__card_accordion accordion">
                         <div class="alcoholism__card_top">
                             <picture class="alcoholism__card_icon">
                                 <source srcset="assets/img/alcoholism/alcoholism-icon-1.svg" type="image/svg+xml">
@@ -811,7 +814,7 @@
     
     
                 <div class="alcoholism__card">
-                    <div class="accordion">
+                    <div class="alcoholism__card_accordion accordion">
                         <div class="alcoholism__card_top">
                             <picture class="alcoholism__card_icon">
                                 <source srcset="assets/img/alcoholism/alcoholism-icon-2.svg" type="image/svg+xml">
@@ -867,7 +870,7 @@
     
     
                 <div class="alcoholism__card">
-                    <div class="accordion">
+                    <div class="alcoholism__card_accordion accordion">
                         <div class="alcoholism__card_top">
                             <picture class="alcoholism__card_icon">
                                 <source srcset="assets/img/alcoholism/alcoholism-icon-3.svg" type="image/svg+xml">
@@ -922,7 +925,7 @@
                 </div>
     
                 <div class="alcoholism__card">
-                    <div class="accordion">
+                    <div class="alcoholism__card_accordion accordion">
                         <div class="alcoholism__card_top">
                             <picture class="alcoholism__card_icon">
                                 <source srcset="assets/img/alcoholism/alcoholism-icon-4.svg" type="image/svg+xml">
@@ -1339,6 +1342,8 @@
                         </div>
     
                     </div>
+                    <button class="reviews__swiper-button-next swiper-button-next"></button>
+                    <button class="reviews__swiper-button-prev swiper-button-prev"></button>
                 </div>
     
         </div>
@@ -1348,7 +1353,9 @@
         <div class="container">
             <div class="doctors__top">
                 <p class="doctors__top_title title">Доверьтесь <i>экспертам</i></p>
-                <p class="doctors__top_text">В клинике работают опытные врачи, которые помогли тысячам пациентов справиться с алкогольной зависимостью. </p>
+                <div class="doctors__top_text">
+                    <p>В клинике работают опытные врачи, которые помогли тысячам пациентов справиться с алкогольной зависимостью.</p> 
+                </div>
             </div>
     
             <div class="doctors__cards">
@@ -1441,6 +1448,9 @@
                         </div>
     
                     </div>
+    
+                    <button class="doctors__swiper-button-next swiper-button-next"></button>
+                    <button class="doctors__swiper-button-prev swiper-button-prev"></button>
                 </div>
             </div>
     
@@ -1607,6 +1617,8 @@
                         </div>
     
                     </div>
+                    <button class="stocks__swiper-button-next swiper-button-next"></button>
+                    <button class="stocks__swiper-button-prev swiper-button-prev"></button>
                 </div>
             </div>
     
@@ -1616,9 +1628,9 @@
     <!-- form -->
     <section class="forms section-offset">
         <div class="container">
+            <p class="forms__tag">Вы сделали 1 шаг — <i>сделайте второй</i></p>
             <div class="forms__row">
                 <div class="forms__text">
-                    <p class="forms__tag">Вы сделали 1 шаг — <i>сделайте второй</i></p>
                     <p class="forms__title title">Бесплатная консультация специалиста&#160;— <i>это первый шаг!</i></p>
                     <p class="forms__subtitle">Оставьте заявку, и наш эксперт свяжется с вами, чтобы помочь подобрать решение и обсудить вашу ситуацию</p>                        
                 </div>
@@ -1667,6 +1679,16 @@
             <ul class="linking__list">
                 <li class="linking__item">
                     <a href="#">Кодирование от алкоголизма 
+                        <div class="linking__item_arrow">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 7C0 7.48325 0.391751 7.875 0.875 7.875L10.6488 7.875L6.37875 12.145C6.036 12.4877 6.03698 13.0438 6.38095 13.3853C6.72319 13.7251 7.27583 13.7242 7.61688 13.3831L13.2929 7.70711C13.6834 7.31658 13.6834 6.68342 13.2929 6.29289L7.61715 0.617151C7.27631 0.276308 6.72369 0.276308 6.38285 0.617151C6.04222 0.957778 6.04197 1.50997 6.3823 1.8509L10.6488 6.125L0.875001 6.125C0.391752 6.125 0 6.51675 0 7Z" fill="#FBFBFE" />
+                            </svg>
+                        </div>
+                    </a>
+                </li>
+    
+                <li class="linking__item">
+                    <a href="#">Кодирование от алкоголизма метода Торпедо
                         <div class="linking__item_arrow">
                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M0 7C0 7.48325 0.391751 7.875 0.875 7.875L10.6488 7.875L6.37875 12.145C6.036 12.4877 6.03698 13.0438 6.38095 13.3853C6.72319 13.7251 7.27583 13.7242 7.61688 13.3831L13.2929 7.70711C13.6834 7.31658 13.6834 6.68342 13.2929 6.29289L7.61715 0.617151C7.27631 0.276308 6.72369 0.276308 6.38285 0.617151C6.04222 0.957778 6.04197 1.50997 6.3823 1.8509L10.6488 6.125L0.875001 6.125C0.391752 6.125 0 6.51675 0 7Z" fill="#FBFBFE" />
@@ -2342,3 +2364,5 @@
 </div>
 </body>
 </html>
+
+
